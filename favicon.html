@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Web Page with JavaScript">
+    <meta name="keywords" content="immaculata, icd2o">
+    <meta name="author" content="Atri Sarker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav_more/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_more/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_more/favicon-16x16.png">
+    <link rel="manifest" href="./fav_more/site.webmanifest">
+    <!-- Google's MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-indigo.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <title>Dice Roller</title>
+  </head>
+
+  <body>
+    <!-- Script -->
+    <script>
+      // single roll
+        function myButtonClicked() {
+          alert(1+Math.floor(Math.random()*6))
+        }
+      // double roll
+        function myButton2Clicked() {
+          var roll1 = 1 + Math.floor(Math.random()*6)
+          var roll2 = 1 + Math.floor(Math.random()*6)
+          alert("" + roll1 + " + " + roll2 + " --> " + (roll1+roll2))
+        }
+      // CSS Button
+        function btnCSS() {
+          var options = ["important", "very important", "nice", "stylish"]
+          alert("Style is " + options[Math.floor(Math.random()*options.length)])
+        }
+    </script>
+    <h1>Six-Sixed Dice Roller</h1>
+    <!-- Colored raised button -->
+    <button onclick="myButtonClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+      Roll!
+    </button>
+    <!-- Colored raised button -->
+    <button onclick="myButton2Clicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+      Double Roll!
+    </button>
+    <br></br>
+    <button onclick="btnCSS()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        CSS
+    </button>
+    <br></br>
+    <p>
+      Manual Rock, Paper, Scissors against the dice.
+      <br>
+      If it's 1 or 2, the ai picks rock.
+      <br>
+      If it's 3 or 4, the ai picks paper.
+      <br>
+      If it's 5 or 6, the ai picks scissors.
+    </p>
+    <br></br>
+    <p>
+      Here is the <a href = "./index.html">link</a> to my first JS page</a>.
+    </p>
+  </body>
+</html>
